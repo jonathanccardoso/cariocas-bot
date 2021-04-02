@@ -8,14 +8,16 @@
         :amount="word.amount"
       />
     </div>
+    <Chat />
   </v-container>
 </template>
 
 <script>
 import Pill from "./Pill";
+import Chat from "./Chat";
 
 export default {
-  components: { Pill },
+  components: { Pill, Chat },
   data: function() {
     return {
       groupedWords: [
