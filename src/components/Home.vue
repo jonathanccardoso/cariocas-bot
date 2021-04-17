@@ -11,12 +11,12 @@
       />
     </div>
 
-    <!-- <h2>Gráficos</h2>
+    <h2>Gráficos Covid Brasil</h2>
+    <span>Como estamos meio a pandêmia, veja como está situação!</span> <br />
+    <span>*Utilizando a api <b>https://covid19.mathdro.id/api</b> </span>
     <div class="wrapper">
-      <canvas id="barChart"></canvas>
-      <canvas id="lineChart"></canvas>
-      <canvas id="pieChart"></canvas>
-    </div> -->
+      <BarChart />
+    </div>
 
     <!-- <script
       defer
@@ -33,9 +33,10 @@
 
 <script>
 import Pill from "./Pill";
+import BarChart from "./BarChart";
 
 export default {
-  components: { Pill },
+  components: { Pill, BarChart },
   data: function() {
     return {
       groupedWords: [
